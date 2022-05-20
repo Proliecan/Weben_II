@@ -21,6 +21,11 @@ app.put("/user", (req, res)=>{
     })
 })
 
+app.use(express.json())
+app.post("/echo", (req, res) => {
+    return res.send(req.body)
+})
+
 app.listen(port, /*hostname,*/ ()=>{
     console.log(`Server started on port ${port}` /* with hostname ${hostname} */)
 })
