@@ -105,3 +105,6 @@ dist
 
 # VS Code local workspace settings
 .vscode/
+
+# Dependencies
+package-lock.json
