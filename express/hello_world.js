@@ -17,7 +17,7 @@ app.put("/user", (req, res)=>{
     req.on("end", () =>{
         temp = Buffer.concat(chunks)
         data = JSON.parse(temp)
-        res.json(data)
+        res.type("html").json(data)
     })
 })
 
