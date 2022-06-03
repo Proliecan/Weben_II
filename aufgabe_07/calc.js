@@ -42,7 +42,7 @@ app.post("/", (req, res) => {
     if (operator == "/") result = o1 / o2
     if (result == false) res.redirect("/error")
 
-    last.push(`${result}`);
+    last.push(`${o1} ${operator} ${o2} = ${result}`);
 
     let lastTxt = ""
     let i = 0
